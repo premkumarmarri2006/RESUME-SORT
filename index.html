@@ -604,7 +604,7 @@
                 <div class="api-banner">
                     <i data-lucide="server"></i>
                     <span>Backend URL:</span>
-                    <input type="text" id="api-url" value="http://localhost:8000" placeholder="http://localhost:8000" />
+                    <input type="text" id="api-url" value="resume-sort-production.up.railway.app" placeholder="http://localhost:8000" />
                     <button class="btn btn-ghost btn-sm" onclick="App.testConnection()">
                         <i data-lucide="activity"></i> Test
                     </button>
@@ -759,7 +759,7 @@ const State = {
 // ══════════════════════════════════════════════════
 const API = {
     baseUrl() {
-        return (document.getElementById('api-url')?.value || 'http://localhost:8000').replace(/\/$/, '');
+        return (document.getElementById('api-url')?.value || 'resume-sort-production.up.railway.app').replace(/\/$/, '');
     },
 
     async upload(jobDescription, files, onProgress) {
